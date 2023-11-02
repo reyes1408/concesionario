@@ -1,18 +1,10 @@
 import { Router } from "express";
-import { actualizarCliente, borrarCliente, buscarCliente, registrarCliente } from "../controllers/cliente.controller.js";
-import { registrarVendedor } from "../controllers/vendedor.controller.js";
-import { registrarVehiculo } from "../controllers/vehiculo.controller.js";
-import { buscarVenta, cancelarVenta, registrarVenta } from "../controllers/ventas.controller.js";
+
+import { registrarCliente, buscarCliente, actualizarCliente, borrarCliente } from "../controllers/cliente.controller.js";
+import { registrarVendedor, buscarVendedor, actualizarVendedor, borrarVendedor } from "../controllers/vendedor.controller.js";
+import { registrarVehiculo, buscarVehiculo, actualizarVehiculo, borrarVehiculo } from "../controllers/vehiculo.controller.js";
+import { registrarVenta, buscarVenta, cancelarVenta } from "../controllers/ventas.controller.js";
 import { agregarPago } from "../controllers/pagos.controller.js";
-
-import {actualizarVendedor} from "../controllers/vendedor.controller.js";
-import {actualizarVehiculo} from "../controllers/vehiculo.controller.js";
-
-import {borrarVendedor} from "../controllers/vendedor.controller.js";
-import {borrarVehiculo} from "../controllers/vehiculo.controller.js";
-
-import {buscarVendedor} from "../controllers/vendedor.controller.js";
-import {buscarVehiculo} from "../controllers/vehiculo.controller.js";
 
 const router = Router(); // Jordi Daniel Reyes H.
 
@@ -31,7 +23,6 @@ router.post('/vehiculo/registrar', registrarVehiculo); //Miguel Angel A.
 router.put('/vehiculo/actualizar/:id', actualizarVehiculo);
 router.delete('/vehiculo/borrar/:id', borrarVehiculo);
 router.get('/vehiculo/buscar/:id', buscarVehiculo);
-
 
 router.post('/ventas/registrar', registrarVenta); //Gabriel Reyes
 router.put('/ventas/cancelar/:id', cancelarVenta);
