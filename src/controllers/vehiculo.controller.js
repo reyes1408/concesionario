@@ -17,11 +17,11 @@ export const registrarVehiculo = async (req, res) => {
         const vehiculoSaved = await newVehiculo.save();
 
         res.json({
-            nombre: vehiculoSaved.nombre,
-            edad: vehiculoSaved.edad,
-            direccion: vehiculoSaved.direccion,
-            ingresos: vehiculoSaved.ingresos,
-            pagos: vehiculoSaved.pagos
+            modelo: vehiculoSaved.modelo,
+            anio: vehiculoSaved.anio,
+            color: vehiculoSaved.color,
+            precio: vehiculoSaved.precio,
+            estado: vehiculoSaved.estado
         })
 
     } catch (error) {
