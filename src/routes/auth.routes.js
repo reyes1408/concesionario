@@ -22,12 +22,12 @@ router.put('/cliente/actualizar/:id', actualizarCliente);
 router.delete('/cliente/borrar/:id', borrarCliente);
 router.post('/cliente/buscar/:id', buscarCliente);
 
-router.post('/vendedor/registrar', registrarVendedor); //MIGUE
+router.post('/vendedor/registrar', registrarVendedor); //Miguel Angel A.
 router.put('/vendedor/actualizar/:id', actualizarVendedor);
 router.delete('/vendedor/borrar/:id', borrarVendedor);
 router.post('/vendedor/buscar/:id', buscarVendedor);
 
-router.post('/vehiculo/registrar', registrarVehiculo); //MIGUE
+router.post('/vehiculo/registrar', registrarVehiculo); //Miguel Angel A.
 router.put('/vehiculo/actualizar/:id', actualizarVehiculo);
 router.delete('/vehiculo/borrar/:id', borrarVehiculo);
 router.get('/vehiculo/buscar/:id', buscarVehiculo);
