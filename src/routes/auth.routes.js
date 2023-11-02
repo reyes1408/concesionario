@@ -14,7 +14,7 @@ import {borrarVehiculo} from "../controllers/vehiculo.controller.js";
 import {buscarVendedor} from "../controllers/vendedor.controller.js";
 import {buscarVehiculo} from "../controllers/vehiculo.controller.js";
 
-const router = Router();
+const router = Router(); // Jordi Daniel Reyes H.
 
 //RUTAS
 router.post('/cliente/registrar', registrarCliente);  //Gabriel Reyes
