@@ -13,7 +13,7 @@ export const agregarPago = async (req, res) => {
         if (ObjectId.isValid(id) && ObjectId.isValid(id_venta)) {
 
             const cli =  await clienteModel.findById(id);
-            const ven =  await vendedorModel.findById(id_vendedor);
+            const ven =  await ventasModel.findById(id_venta);
 
             if (cli && ven) {
                 cli.pagos.push({
@@ -21,7 +21,7 @@ export const agregarPago = async (req, res) => {
                     montoPagado
                 });
 
-                const c = await cli.save();
+                await cli.save();
                 res.status(200).json({
                     message: "Pago realizado"
                 });
