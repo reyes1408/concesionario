@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { registrarCliente } from "../controllers/cliente.controller.js";
+import { actualizarCliente, borrarCliente, buscarCliente, registrarCliente } from "../controllers/cliente.controller.js";
 import { registrarVendedor } from "../controllers/vendedor.controller.js";
 import { registrarVehiculo } from "../controllers/vehiculo.controller.js";
 import { registrarVenta } from "../controllers/ventas.controller.js";
@@ -8,9 +8,9 @@ const router = Router();
 
 //RUTAS
 router.post('/cliente/registrar', registrarCliente);  //GABO
-// router.put('/cliente/actualizar/:id', updateUser);
-// router.delete('/cliente/borrar/:id', deleteUser);
-// router.get('/cliente/buscar/:id', findUser);
+router.put('/cliente/actualizar/:id', actualizarCliente);
+router.delete('/cliente/borrar/:id', borrarCliente);
+router.post('/cliente/buscar/:id', buscarCliente);
 
 router.post('/vendedor/registrar', registrarVendedor); //MIGUE
 // router.put('/vendedor/actualizar/:id', updateUser);
