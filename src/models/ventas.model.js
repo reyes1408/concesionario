@@ -29,11 +29,10 @@ const ventaSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         default: null
     },
-    fechaCancelacion: {
+    fecancelacion: {
         type: Date,
         default: null
     }
-
 });
 
 export default mongoose.model('Ventas', ventaSchema);

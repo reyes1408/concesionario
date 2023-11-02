@@ -22,7 +22,6 @@ router.post('/vehiculo/registrar', registrarVehiculo); //MIGUE
 // router.delete('/vehiculo/borrar/:id', deleteUser);
 // router.get('/vehiculo/buscar/:id', findUser);
 
-
 router.post('/ventas/registrar', registrarVenta); //GABO
 // router.put('/ventas/actualizar/:id', updateUser);
 // router.put('/ventas/cancelar/:id', deleteUser);
