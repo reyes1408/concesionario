@@ -2,7 +2,8 @@ import { Router } from "express";
 import { actualizarCliente, borrarCliente, buscarCliente, registrarCliente } from "../controllers/cliente.controller.js";
 import { registrarVendedor } from "../controllers/vendedor.controller.js";
 import { registrarVehiculo } from "../controllers/vehiculo.controller.js";
-import { cancelarVenta, registrarVenta } from "../controllers/ventas.controller.js";
+import { buscarVenta, cancelarVenta, registrarVenta } from "../controllers/ventas.controller.js";
+import { agregarPago } from "../controllers/pagos.controller.js";
 
 const router = Router();
 
@@ -24,6 +25,8 @@ router.post('/vehiculo/registrar', registrarVehiculo); //MIGUE
 
 router.post('/ventas/registrar', registrarVenta); //GABO
 router.put('/ventas/cancelar/:id', cancelarVenta);
-// router.get('/ventas/buscar/:id', findUser);
+router.get('/ventas/buscar/:id', buscarVenta);
+
+router.put('/pagos/registrar/:id', agregarPago);
 
 export default router;
