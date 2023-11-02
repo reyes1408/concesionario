@@ -8,7 +8,7 @@ import { agregarPago } from "../controllers/pagos.controller.js";
 const router = Router();
 
 //RUTAS
-router.post('/cliente/registrar', registrarCliente);  //GABO
+router.post('/cliente/registrar', registrarCliente);  //Gabriel Reyes
 router.put('/cliente/actualizar/:id', actualizarCliente);
 router.delete('/cliente/borrar/:id', borrarCliente);
 router.post('/cliente/buscar/:id', buscarCliente);
@@ -23,10 +23,10 @@ router.post('/vehiculo/registrar', registrarVehiculo); //MIGUE
 // router.delete('/vehiculo/borrar/:id', deleteUser);
 // router.get('/vehiculo/buscar/:id', findUser);
 
-router.post('/ventas/registrar', registrarVenta); //GABO
+router.post('/ventas/registrar', registrarVenta); //Gabriel Reyes
 router.put('/ventas/cancelar/:id', cancelarVenta);
 router.get('/ventas/buscar/:id', buscarVenta);
 
-router.put('/pagos/registrar/:id', agregarPago);
+router.put('/pagos/registrar/:id', agregarPago); // Gabriel Reyes
 
 export default router;
